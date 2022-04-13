@@ -5,9 +5,9 @@ namespace GenericRepository.EntityFrameworkCore
 {
     public static class ServicesExtension
     {
-        public static void AddGenericRepositorySqlServer(this IServiceCollection services, string connectionString)
+        public static void AddGenericRepositorySqlServer<T>(this IServiceCollection services, string connectionString) where T : GenericDbContext
         {
-            services.AddDbContext<GenericDbContext>(options =>
+            services.AddDbContext<T>(options =>
                 options.UseSqlServer(connectionString));
         }
     }

@@ -4,7 +4,7 @@ namespace GenericRepository.EntityFrameworkCore
 {
     public class GenericDbContext : DbContext
     {
-        public GenericDbContext(DbContextOptions<GenericDbContext> options)
+        public GenericDbContext(DbContextOptions options)
         : base(options) { }
 
 
