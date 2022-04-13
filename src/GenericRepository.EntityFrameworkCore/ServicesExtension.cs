@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace GenericRepository.EntityFrameworkCore.ServiceInjection
+namespace GenericRepository.EntityFrameworkCore
 {
     public static class ServicesExtension
     {
