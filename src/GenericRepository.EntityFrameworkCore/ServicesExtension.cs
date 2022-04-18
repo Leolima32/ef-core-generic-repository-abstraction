@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace GenericRepository.EntityFrameworkCore
@@ -9,6 +10,11 @@ namespace GenericRepository.EntityFrameworkCore
         {
             services.AddDbContext<T>(options =>
                 options.UseSqlServer(connectionString));
+        }
+
+        public static void CreateDatabaseIfNotExists(this IServiceCollection services, GenericDbContext context)
+        {
+            context.Database.EnsureCreated();
         }
     }
 }
