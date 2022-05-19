@@ -9,7 +9,7 @@
     <RepositoryType>git</RepositoryType>
     <Description>A generic repository class with simples CRUDs operations</Description>
     <PackageTags>Database, CRUD</PackageTags>
-    <Version>1.0.4</Version>
+    <Version>$(VersionPrefix)</Version>
   </PropertyGroup>
 
   <ItemGroup>
