@@ -1,6 +1,6 @@
-﻿using GenericRepository.EntityFrameworkCore.Repository;
+﻿using LF.GenericRepository.EntityFrameworkCore.Repository;
 
-namespace GenericRepository.EntityFrameworkCore.Tests.Fakes
+namespace LF.GenericRepository.EntityFrameworkCore.Tests.Fakes
 {
     public class FakeRepository: GenericRepository<FakeModel>
     {

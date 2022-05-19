@@ -1,4 +1,4 @@
-﻿namespace GenericRepository.EntityFrameworkCore.Model
+﻿namespace LF.GenericRepository.EntityFrameworkCore.Model
 {
     public abstract class BaseModel
     {

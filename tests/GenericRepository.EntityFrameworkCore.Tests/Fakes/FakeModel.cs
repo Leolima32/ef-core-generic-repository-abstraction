@@ -1,7 +1,7 @@
-﻿using GenericRepository.EntityFrameworkCore.Model;
+﻿using LF.GenericRepository.EntityFrameworkCore.Model;
 using System;
 
-namespace GenericRepository.EntityFrameworkCore.Tests.Fakes
+namespace LF.GenericRepository.EntityFrameworkCore.Tests.Fakes
 {
     public class FakeModel: BaseModel
     {

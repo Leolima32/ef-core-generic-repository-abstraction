@@ -1,13 +1,13 @@
 using Xunit;
 using System;
-using GenericRepository.EntityFrameworkCore.Repository;
-using GenericRepository.EntityFrameworkCore.Tests.Fakes;
+using LF.GenericRepository.EntityFrameworkCore.Repository;
+using LF.GenericRepository.EntityFrameworkCore.Tests.Fakes;
 using Moq;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Collections.Generic;
 
-namespace GenericRepository.EntityFrameworkCore.Tests
+namespace LF.GenericRepository.EntityFrameworkCore.Tests
 {
     public class GenericRepositoryTests
     {

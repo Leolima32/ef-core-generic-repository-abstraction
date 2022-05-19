@@ -5,11 +5,11 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{2F599B90-FE61-47BE-A45E-2BE91E87030A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericRepository.EntityFrameworkCore", "src\GenericRepository.EntityFrameworkCore\GenericRepository.EntityFrameworkCore.csproj", "{5A228904-E33C-4C4F-88C3-F0607B70EEB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LF.GenericRepository.EntityFrameworkCore", "src\GenericRepository.EntityFrameworkCore\LF.GenericRepository.EntityFrameworkCore.csproj", "{5A228904-E33C-4C4F-88C3-F0607B70EEB8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9FBC442C-5876-4E56-9D48-0DBE29B6F583}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericRepository.EntityFrameworkCore.Tests", "tests\GenericRepository.EntityFrameworkCore.Tests\GenericRepository.EntityFrameworkCore.Tests.csproj", "{636BC04C-681A-408D-B545-7491871FDBDA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LF.GenericRepository.EntityFrameworkCore.Tests", "tests\GenericRepository.EntityFrameworkCore.Tests\LF.GenericRepository.EntityFrameworkCore.Tests.csproj", "{636BC04C-681A-408D-B545-7491871FDBDA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

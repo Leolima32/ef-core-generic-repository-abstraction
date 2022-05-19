@@ -1,7 +1,7 @@
-﻿using GenericRepository.EntityFrameworkCore.Model;
-using static GenericRepository.EntityFrameworkCore.Model.BaseModel;
+﻿using LF.GenericRepository.EntityFrameworkCore.Model;
+using static LF.GenericRepository.EntityFrameworkCore.Model.BaseModel;
 
-namespace GenericRepository.EntityFrameworkCore.Repository
+namespace LF.GenericRepository.EntityFrameworkCore.Repository
 {
     public interface IGenericRepository<T> where T : BaseModel
     {

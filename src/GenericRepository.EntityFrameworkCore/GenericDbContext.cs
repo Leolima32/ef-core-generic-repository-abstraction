@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace GenericRepository.EntityFrameworkCore
+namespace LF.GenericRepository.EntityFrameworkCore
 {
     public class GenericDbContext : DbContext
     {

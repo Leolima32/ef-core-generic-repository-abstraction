@@ -1,7 +1,7 @@
-﻿using GenericRepository.EntityFrameworkCore.Model;
+﻿using LF.GenericRepository.EntityFrameworkCore.Model;
 using Microsoft.EntityFrameworkCore;
 
-namespace GenericRepository.EntityFrameworkCore.Repository
+namespace LF.GenericRepository.EntityFrameworkCore.Repository
 {
 
     public abstract class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : BaseModel

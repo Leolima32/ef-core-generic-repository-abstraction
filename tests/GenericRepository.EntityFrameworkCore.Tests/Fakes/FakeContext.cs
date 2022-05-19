@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace GenericRepository.EntityFrameworkCore.Tests.Fakes
+namespace LF.GenericRepository.EntityFrameworkCore.Tests.Fakes
 {
     public class FakeContext : GenericDbContext
     {
