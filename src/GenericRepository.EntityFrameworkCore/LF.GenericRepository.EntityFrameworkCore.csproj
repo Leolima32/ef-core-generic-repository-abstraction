@@ -10,6 +10,7 @@
     <Description>A generic repository class with simples CRUDs operations</Description>
     <PackageTags>Database, CRUD</PackageTags>
     <Version>$(VersionPrefix)</Version>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>

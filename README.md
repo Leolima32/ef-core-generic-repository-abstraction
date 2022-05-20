@@ -9,19 +9,13 @@ Before we begin, check that you have met the following requirements:
 * You have a running local instance of `SQL SERVER`.
 
 
-## 🚀 Installation
+## 🚀 Getting Started
 
-In order to install this package you can follow this steps:
+Install the package on your app using the commando below
 
-Visual Studio:
-
-* Open the solution and select GenericRepository.EntityFrameworkCore project, then click on build menu and select Pack GenericRepository.EntityFrameworkCore
-<img src="img/VisualStudio_Example1.png" alt="exemplo imagem">
-* Copy the nupkg file created to a local folder and add that folder as a package source
-<img src="img/VisualStudio_Example2.png" alt="exemplo imagem">
-* Browse your local folder on nuget manager and select this package to install 
-<img src="img/VisualStudio_Example3.png" alt="exemplo imagem">
-
+```
+Install-Package LF.GenericRepository.EntityFrameworkCore
+```
 
 ## ☕ Using in your project
 
