@@ -57,4 +57,4 @@ Add your database configuration in Program.cs
   builder.Services.AddGenericRepositorySqlServer<Context>("YOUR_CONNECTION_STRING");
 ```
 
-Thats it! Your repository should have all the functions needed for a basic CRUD operation.
+Thats it! Your repository should have all the functions needed for all basic CRUD operations.
