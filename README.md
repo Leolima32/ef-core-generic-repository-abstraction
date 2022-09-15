@@ -11,7 +11,7 @@ Before we begin, check that you have met the following requirements:
 
 ## 🚀 Getting Started
 
-Install the package on your app using the commando below
+Install the package on your app using the command below
 
 ```
 Install-Package LF.GenericRepository.EntityFrameworkCore
@@ -29,7 +29,7 @@ Create your model objects and make them herd from BaseModel class
       public double Price { get; set; }
   }
 ```
-Create an context class like this
+Create an context class
 ```
   public class Context : GenericDbContext
   {
@@ -40,7 +40,7 @@ Create an context class like this
       public DbSet<Product> Products { get; set; }
   }
 ```
-Create your repository like this
+Create your repository
 ```
   public class ProductRepository : GenericRepository<Product>
   {
