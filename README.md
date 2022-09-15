@@ -21,7 +21,7 @@ Install-Package LF.GenericRepository.EntityFrameworkCore
 
 In order to configure in your project follow this steps
 
-Create your model objects and make them herd from BaseModel class
+Create your model class inheriting from BaseModel
 ```
   public class Product : BaseModel
   {
@@ -29,7 +29,7 @@ Create your model objects and make them herd from BaseModel class
       public double Price { get; set; }
   }
 ```
-Create an context class
+Create your context class
 ```
   public class Context : GenericDbContext
   {
