@@ -13,7 +13,7 @@ Before we begin, check that you have met the following requirements:
 
 Install the package on your app using the command below
 
-```
+```powershell
 Install-Package LF.GenericRepository.EntityFrameworkCore
 ```
 
@@ -22,7 +22,7 @@ Install-Package LF.GenericRepository.EntityFrameworkCore
 In order to configure in your project follow this steps
 
 Create your model class inheriting from BaseModel
-```
+```csharp
   public class Product : BaseModel
   {
       public string Name { get; set; }
@@ -30,7 +30,7 @@ Create your model class inheriting from BaseModel
   }
 ```
 Create your context class
-```
+```csharp
   public class Context : GenericDbContext
   {
       public Context(DbContextOptions options)
@@ -41,7 +41,7 @@ Create your context class
   }
 ```
 Create your repository
-```
+```csharp
   public class ProductRepository : GenericRepository<Product>
   {
       private Context _db;
@@ -53,7 +53,7 @@ Create your repository
 ```
 
 Add your database configuration in Program.cs 
-```
+```csharp
   builder.Services.AddGenericRepositorySqlServer<Context>("YOUR_CONNECTION_STRING");
 ```
 
