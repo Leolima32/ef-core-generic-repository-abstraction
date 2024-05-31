@@ -6,6 +6,7 @@ using Moq;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace LF.GenericRepository.EntityFrameworkCore.Tests
 {
@@ -80,13 +81,31 @@ namespace LF.GenericRepository.EntityFrameworkCore.Tests
             Assert.Equal("Leonardo Ferreira", model.Name);
         }
 
+        [Fact]
+        public async Task Should_Add_Entity_Async()
+        {
+            var model = CreateModel("Leonardo Ferreira", 26);
+            var testeResult = await mockRepository.AddAsync(model);
+
+            var addedModel = mockContext.Model.Where(x => x.Id == model.Id).FirstOrDefault();
+
+            Assert.Equal(model, addedModel);
+        }
+
         public FakeModel AddModel(string name, int age)
+        {
+            var model = CreateModel(name, age);
+
+            mockRepository.Add(model);
+
+            return model;
+        }
+
+        public FakeModel CreateModel(string name, int age)
         {
             FakeModel model = new FakeModel();
             model.Name = name;
             model.Age = age;
-
-            mockRepository.Add(model);
 
             return model;
         }

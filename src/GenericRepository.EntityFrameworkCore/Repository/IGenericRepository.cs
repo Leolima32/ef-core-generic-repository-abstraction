@@ -12,5 +12,6 @@ namespace LF.GenericRepository.EntityFrameworkCore.Repository
         Guid Add(T obj);
         void Update(T obj);
         void Remove(Guid id);
+        Task<Guid> AddAsync(T obj, CancellationToken ct);
     }
 }

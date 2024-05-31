@@ -52,5 +52,12 @@ namespace LF.GenericRepository.EntityFrameworkCore.Repository
             _db.Entry(obj).State = EntityState.Modified;
             _db.SaveChanges();
         }
+
+        public virtual async Task<Guid> AddAsync(TEntity obj, CancellationToken ct = default) {
+            await _db.Set<TEntity>().AddAsync(obj, ct);
+            await _db.SaveChangesAsync(ct);
+
+            return obj.Id;
+        }
     }
 }
